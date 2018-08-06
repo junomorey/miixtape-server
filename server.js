@@ -15,8 +15,8 @@ var cookieParser = require('cookie-parser');
 
 var client_id = process.env.SPOTIFY_CLIENT_ID; // Your client id
 var client_secret = process.env.SPOTIFY_CLIENT_SECRET; // Your secret
-var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
-var client_path = 'http://localhost:3000';
+var redirect_uri = process.env.REDIREECT_URI // Your redirect uri
+var client_path = process.env.FRONTEND_URI;
 
 /**
  * Generates a random string containing numbers and letters
